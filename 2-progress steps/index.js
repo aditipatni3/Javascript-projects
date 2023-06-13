@@ -40,6 +40,7 @@ progress.style.width=(activeCircles.length-1)/(circles.length-1)*100 +"%";
 
     //change the button enabled and disabled state
 if(currentActive===1){
+    prev.disabled=true;
 }
 else if(currentActive===circles.length){
     next.disabled=true;
