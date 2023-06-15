@@ -6,4 +6,6 @@ List Of Projects
 4. Hidden Search     [Live Demo](https://javascript-projects-hidden-search.netlify.app/)
 5. Blurry Loading    [Live Demo](https://javascript-projects-blurry-loading.netlify.app/)
 6. Scroll Animation  [Live Demo](https://javascript-projects-scroll-animation.netlify.app/)
-7. Split Landing Page [Live Demo](https://javascript-projects-split-landing-pg.netlify.app/)
+7. Split Landing Page[Live Demo](https://javascript-projects-split-landing-pg.netlify.app/)
+8. Hoverboard        [Live Demo](https://javascript-projects-hoverboard.netlify.app/)
+
