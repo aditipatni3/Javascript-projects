@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+}
+body{
+    background-color: black;
+    min-height: 100vh;
+    height: 100%;
+    min-width: 100vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.container::before{
+    content: " ";
+    width:18rem ;
+    height: 18rem;
+    border-radius: 50%;
+    border: 0;
+    background:linear-gradient(pink, rgb(255, 0, 255), rgb(255, 0, 140));
+    position: absolute;
+   top:65px;
+   left: 155px;
+ 
+
+
+}
+.container::after{
+    content: " ";
+    width:20rem ;
+    height: 20rem;
+    border-radius: 50%;
+    border: 0;
+    background:linear-gradient(rgb(253, 255, 150),rgb(255, 242, 0), rgb(255, 162, 0), red);
+    position: absolute;
+    bottom:25px;
+    right: 150px;
+   
+}
+
+
+.ball1{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(0, 255, 26);
+    position: absolute;
+    bottom: 230px;
+    left: 150px;
+    border-radius: 50%;
+    box-shadow:1px 1px 20px 4px rgb(43, 255, 0);
+}
+.ball2{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255 0 0);
+    position: absolute;
+    top: 190px;
+    right: 25vw;
+    border-radius: 50%;
+    box-shadow:1px 1px 20px 4px red;
+}
+.ball3{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 140, 255);
+    position: absolute;
+    bottom: 90px;
+    left: 425px;
+    border-radius: 50%;
+}
+.container .box{
+   position: relative;
+   width: 900px;
+   height: 650px;
+    background: transparent;
+    border: 1px solid rgba(232, 232, 232, 0.4);
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 20px 1px rgb(104, 104, 104);
+    backdrop-filter: blur(25px);
+    z-index: 10;
+    color: white;
+    
+}
+.msg-area{
+    overflow-y: scroll;
+}
+.input{
+    background-color: transparent;
+    border: 1px solid white;
+    width: 84%;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    position: absolute;
+    bottom: 0px;
+    min-height: 50px;
+    color: white;
+    
+
+}
+
+.send{
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    width: 8rem;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    padding: 10px 10px;
+}
+.send:active{
+    background: linear-gradient( rgb(54, 127, 237), blue);
+}
+.left, .right{
+    font-size:18px;
+    color: white;
+    font-family: monospace;
+    display: inline-block;
+    width: auto;
+    max-width: 60%;
+    padding: 14px;
+    word-wrap: break-word;
+}
+.msgCon1, .msgCon2{
+    display: inline-block;
+    width: 100%;
+}
