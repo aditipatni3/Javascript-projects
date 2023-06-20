@@ -27,7 +27,7 @@ body{
     background:linear-gradient(pink, rgb(255, 0, 255), rgb(255, 0, 140));
     position: absolute;
    top:65px;
-   left: 155px;
+   left: 215px;
  
 
 
@@ -86,7 +86,20 @@ body{
     backdrop-filter: blur(25px);
     z-index: 10;
     color: white;
+    padding: 40px 40px;
     
+}
+.icon{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+.container h3{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-family: cursive;
 }
 .msg-area{
     overflow-y: scroll;

@@ -1,56 +1,51 @@
-window.onload=start();
+// document.getElementById("text").focus();
+// document.getElementsByClassName("box")[0].addEventListener("keypress", function(e){
+//     if(e.key== "enter"){
+//         send();
+//     }
+// });
+// document.getElementById("send").addEventListener("click", send);
+// function send(){
+//     var text= document.getElementById("text").value;
+//     if(text==""){
 
-function start(){
-    console.log("start function called");
-    let res_msg=document.createElement('div');
-    res_msg.innerHTML="Hello, myself meBot, How can I help you?";
-    res_msg.setAttribute("class", "left")
-    document.getElementById('msg_area').appendChild(res_msg);
+//     }
+//     else{
+//         var request=document.createElement("div");
+//         request.className="request";
+//         request.innerHTML=text;
 
-document.getElementById("send").addEventListener("click", async(e)=>{
-    e.preventDefault();
-    console.log("start function called");
-    var req= document.getElementById("text").value;
+//         document.getElementsByClassName("box")[0].appendChild(request);
+//         document.getElementById("text").value="";
 
-    if(req===undefined || req==""){
-        return;
-    }
-    else{
-        let res="";
-        await axios.get(`https://api.monkedev.com/fun/chat?msg=${req}`).then(data=>{
-            res=JSON.stringify(data.data.response);
-    });
-        
-        let msg_req=document.createElement('div');
-        let msg_res=document.createElement('div');
-        
-        
-        let Con1=document.createElement('div');
-        let Con2=document.createElement('div');
+//         fetch(`https://api.monkedev.com/fun/chat?msg=${text}`).then(response=>response.json()).then(function(data){
+//             var response=document.createElement("div");
+//             console.log(response)
+//             response.className="response";
+//             response.innerHTML=data.response;
 
-        Con1.setAttribute("class", "msgCon1");
-        Con2.setAttribute("class", "msgCon2");
+//             setTimeout(function(){
+//                 document.getElementsByClassName("box")[0].appendChild(response);
+//                 var a=document.getElementsByClassName("box")[0].scrollHeight;
+//                 document.getElementsByClassName("box")[0].scrollTop=a+100;
 
-        msg_req.innerHTML=req;
-        msg_res.innerHTML=res;
-
-        msg_req.setAttribute("class", "right");
-        msg_res.setAttribute("class", "left");
-
-        let message=document.getElementById("msg_area");
-
-        message.appendChild(Con1);
-        message.appendChild(Con2);
-
-        Con1.appendChild(msg_req);
-        Con2.appendChild(msg_res);
-
-        document.getElementById('text').value="";
-
-    }
-
-    });
+//             }, 1000);
+//         });
+//     }
+// }
 
 
-
+const q = encodeURIComponent('how many days between tuesday and friday');
+const uri = 'https://api.wit.ai/message?v=20230215&q=' + q;
+const auth = 'Bearer ZJJSH72Y6EGGM6QPJJV4XLAUE6SEJOTP';
+// fetch(uri, {headers: {Authorization: auth}})
+//   .then(res => res.json())
+//   .then(res => console.log(res))
+const h=async()=>{
+    const response=await fetch('https://api.wit.ai/message?v=20230215&q=hiii',{
+        headers: {Authorization: 'Bearer ZJJSH72Y6EGGM6QPJJV4XLAUE6SEJOTP'}
+    })
+    const responseData=await response.json()
+    console.log(responseData)
 }
+h()
