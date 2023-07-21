@@ -8,4 +8,6 @@ List Of Projects
 6. Scroll Animation  [Live Demo](https://javascript-projects-scroll-animation.netlify.app/)
 7. Split Landing Page[Live Demo](https://javascript-projects-split-landing-pg.netlify.app/)
 8. Hoverboard        [Live Demo](https://javascript-projects-hoverboard.netlify.app/)
+9. Vertical Slider
+10. Movie App        [Live Demo](https://javascript-projects-movie-app.netlify.app/)
 
