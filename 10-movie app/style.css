@@ -126,3 +126,15 @@ main{
 .no_results{
     color: white;
 }
+
+
+@media screen and (max-width: 425px){
+    .logo-h3{
+        margin: -5px -5px ;
+        visibility: hidden;
+    }
+    .search{
+       margin: auto auto;
+
+    }
+}
