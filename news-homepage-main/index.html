@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter">
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;  
+        background-color: black;
+        color: hsl(228, 28%, 76%);
+        display:block;
+       
+     
+      }
+      .attribution a {
+       
+        color: aliceblue;
+        text-decoration: none;
+      }
+      body {
+        margin: 1rem 10rem;
+        font-family: Inter, sans-serif;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 0.6fr 0.6fr 0.5fr;
+        gap: 30px;
+      }
+      .logo {
+        grid-column: 1;
+        display: flex;
+        align-items: center;
+      }
+      .navbar {
+        grid-column: 2 / span 2;
+        grid-row: 1;
+
+        display: flex;
+        justify-content: end;
+        align-items: center;
+      }
+      .navbar a {
+        margin: 5% 3%;
+        text-decoration: none;
+        color: gray;
+      }
+      .navbar a:hover {
+        color: rgb(214, 129, 50);
+        cursor: pointer;
+      }
+      .navbar h1 {
+        background-color: aqua;
+      }
+
+      .headerImg {
+        grid-column: span 2;
+        grid-row: 2;
+      }
+      .headerImg img {
+        width: 100%;
+      }
+      .new {
+        grid-row: 2 / span 2;
+        grid-column: 3;
+        background-color: rgb(21, 14, 38);
+        color: white;
+        padding: 1rem;
+      }
+      .new h1 {
+        padding: 1rem;
+        margin: 2%;
+        color: rgb(214, 129, 50);
+      }
+      .new h3 {
+        padding: 1rem;
+        text-align: justify;
+        color: rgb(253, 251, 251);
+        margin: 1rem auto 0 auto;
+      }
+      .new h3:hover {
+        color: rgb(214, 129, 50);
+        cursor: pointer;
+      }
+
+      .new p {
+        padding: 1.2rem;
+        text-align: justify;
+        color: rgba(253, 251, 251, 0.5);
+      }
+      hr {
+        margin: 4%;
+        background-color: rgba(123, 121, 121, 0.4);
+      }
+      .title {
+        grid-row: 3;
+        
+      }
+      .title{
+      font-family: Inter, sans-serif;
+       font-weight: 900;
+       font-size: 2rem;
+      }
+
+      .para {
+        grid-row: 3;
+        grid-column: 2;
+        padding: 2rem 1rem 2rem 0;
+        text-align: justify;
+        color: rgba(44, 42, 42, 0.8);
+        line-height: 1.2rem;
+      }
+      button {
+        background-color: black;
+        color: white;
+        padding: 2px 5px;
+        display: block;
+        margin: 3rem auto 2rem 0;
+        width: 140px;
+        height: 40px;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: rgb(214, 129, 50);
+        color: black;
+      }
+      .one {
+        grid-row: 4;
+        grid-column: 1;
+      }
+      .two {
+        grid-row: 4;
+        grid-column: 2;
+      }
+      .three {
+        grid-row: 4;
+        grid-column: 3;
+      }
+      .bottomImg {
+        float: left;
+        margin-right: 5%;
+      }
+
+      h2 {
+        color: rgba(71, 67, 67, 0.5);
+      }
+      .bottom h4{
+        margin: 3% 0 0 0;
+      }
+      .bottom p {
+        color: rgba(38, 37, 37, 0.5);
+        text-align: justify;
+        padding:  3% 15%;
+      }
+      .bottom h4:hover {
+        color: red;
+      }
+
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo"><img src="./assets/images/logo.svg" alt="logo"></div>
+      <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">New</a>
+        <a href="#">Popular</a>
+        <a href="#">Trending</a>
+        <a href="#">Categories</a>
+      </div>
+      <div class="headerImg">
+        <img src="./assets/images/image-web-3-desktop.jpg" alt="img" />
+      </div>
+      <div class="new">
+        <h1>New</h1>
+
+        <h3>Hydrogen VS Electric Cars</h3>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        <hr />
+
+        <h3>The Downsides of AI Artistry</h3>
+        <p>
+          What are the possible adverse effects of on-demand AI image
+          generation?
+        </p>
+        <hr />
+
+        <h3>Is VC Funding Drying Up?</h3>
+        <p>
+          Private funding by VC firms is down 50% YOY. We take a look at what
+          that means.
+        </p>
+      </div>
+
+      <div class="title"><h1>The Bright Future of Web 3.0?</h1></div>
+      <div class="para">
+        We dive into the next evolution of the web that claims to put the power
+        of the platforms back into the hands of the people. But is it really
+        fulfilling its promise?
+        <button>Read more</button>
+      </div>
+      <div class="one bottom">
+        <img
+          class="bottomImg"
+          src="./assets/images/image-retro-pcs.jpg"
+          alt="image"
+          width="100px"
+        />
+
+        <h2>01</h2>
+        <h4>Reviving Retro PCs</h4>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </div>
+      <div class="two bottom">
+        <img
+          class="bottomImg"
+          src="./assets/images/image-top-laptops.jpg"
+          alt="image"
+          width="100px"
+        />
+
+        <h2>02</h2>
+        <h4>Top 10 Laptops of 2022</h4>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
+      <div class="three bottom">
+        <img
+          class="bottomImg"
+          src="./assets/images/image-gaming-growth.jpg"
+          alt="image"
+          width="100px"
+        />
+
+        <h2>03</h2>
+        <h4>The Growth of Gaming</h4>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+
+    <div class="attribution">
+     <p> Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/aditipatni3">Aditi Patni</a>.</p>
+    </div>
+  </body>
+</html>

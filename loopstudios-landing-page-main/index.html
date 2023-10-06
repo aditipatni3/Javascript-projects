@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Loopstudios </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Alata, sans-serif;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr;
+        gap: 10%;
+        background-image: url(./images/desktop/image-hero.jpg);
+      }
+      .container img {
+        grid-column: 1;
+        margin: 2rem 5rem;
+      }
+      .navbar {
+        grid-column: 2;
+        display: flex;
+        justify-content: end;
+        margin: 2rem 3rem;
+      }
+      .navbar a {
+        margin: 0.5rem 2rem;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+      }
+      .navbar a:hover {
+        cursor: pointer;
+        color: black;
+        text-decoration: underline;
+      }
+      .box {
+        text-transform: uppercase;
+        border: 2px solid white;
+        padding: 3rem 7rem;
+        margin: 7rem 5rem;
+        color: white;
+        font-size: 3rem;
+      }
+      .section {
+        margin: 10rem 20rem;
+        position: relative;
+      }
+      .section img {
+        display: inline-block;
+      }
+      .text {
+        display: inline-block;
+        position: absolute;
+        background-color: white;
+        padding: 5rem 2rem;
+        z-index: 2;
+        top: 60%;
+        left: 44%;
+      }
+      .text h1 {
+        text-transform: uppercase;
+        margin: 0 1rem 1.5rem 0;
+        padding: 0 5rem 0 0;
+      }
+      .text p {
+        text-align: justify;
+        padding-right: 6rem;
+        line-height: 1.2rem;
+      }
+      .grids {
+        margin: 15rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 3vh 40vh 40vh;
+        gap: 5%;
+        color: rgb(245, 242, 242);
+      }
+      .grids h1 {
+        grid-row: 1;
+        grid-column: 1 / span 3;
+        text-transform: uppercase;
+        color: black;
+      }
+      .btn {
+        display: flex;
+        justify-content: end;
+      }
+      .grids button {
+        grid-column: 4;
+        width: 60%;
+        height: 3rem;
+        margin-right: 1rem;
+        background-color: black;
+        text-transform: uppercase;
+        color: white;
+        padding: 2px 2px;
+      }
+      .grids button:hover {
+        background-color: rgb(189, 187, 187);
+        color: black;
+        cursor: pointer;
+      }
+      .item {
+        display: flex;
+        align-items: end;
+        padding: 1rem 2rem;
+        margin: 1rem;
+        font-family: Josefin Sans, sans-serif;
+        
+      }
+      .item1 {
+        background-image: url(./images/desktop/image-deep-earth.jpg);
+        text-transform: uppercase;
+      }
+      .item2 {
+        background-image: url(./images/desktop/image-night-arcade.jpg);
+        text-transform: uppercase;
+      }
+      .item3 {
+        background-image: url(./images/desktop/image-soccer-team.jpg);
+        text-transform: uppercase;
+      }
+      .item4 {
+        background-image: url(./images/desktop/image-grid.jpg);
+        text-transform: uppercase;
+      }
+      .item5 {
+        background-image: url(./images/desktop/image-from-above.jpg);
+        text-transform: uppercase;
+      }
+      .item6 {
+        background-image: url(./images/desktop/image-pocket-borealis.jpg);
+        text-transform: uppercase;
+      }
+      .item7 {
+        text-transform: uppercase;
+        background-image: url(./images/desktop/image-curiosity.jpg);
+      }
+      .item8 {
+        background-image: url(./images/desktop/image-fisheye.jpg);
+        text-transform: uppercase;
+      }
+      footer {
+        background-color: black;
+        color: white;
+        height: 12rem;
+        margin-bottom: 0;
+      }
+      footer img {
+      }
+      .left {
+        display: inline-block;
+        float: left;
+        margin: 1rem 2rem;
+      }
+      .bottomNav {
+        margin: 2rem 0;
+      }
+      .left a {
+        color: white;
+        text-decoration: none;
+        margin: 1rem 1rem 0 0;
+      }
+      .left a:hover {
+        text-decoration: underline;
+        color: gray;
+        cursor: pointer;
+      }
+      .socials {
+        display: inline-block;
+        float: right;
+        margin: 2rem 4rem;
+      }
+      .socials a {
+        margin: 2rem 1rem;
+      }
+      .socials p {
+        margin: 2rem 0;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./images/logo.svg" alt="logo" />
+      <div class="navbar">
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Events</a>
+        <a href="#">Products</a>
+        <a href="#">Support</a>
+      </div>
+      <div class="box">Immersive experiences that deliver</div>
+    </div>
+
+    <div class="section">
+      <img src="./images/desktop/image-interactive.jpg" alt="interactive" />
+      <div class="text">
+        <h1>The leader in interactive VR</h1>
+        <p>
+          Founded in 2011, Loopstudios has been producing world-class virtual
+          reality projects for some of the best companies around the globe. Our
+          award-winning creations have transformed businesses through digital
+          experiences that bind to their brand.
+        </p>
+      </div>
+    </div>
+
+    <div class="grids">
+      <h1>Our creations</h1>
+      <div class="btn">
+        <button class="see-all">See all</button>
+      </div>
+      <div class="item1 item"><h2>Deep earth</h2></div>
+      <div class="item2 item"><h2>Night arcade</h2></div>
+      <div class="item3 item"><h2>Soccer team VR</h2></div>
+      <div class="item4 item"><h2>The grid</h2></div>
+      <div class="item5 item"><h2>From up above VR</h2></div>
+      <div class="item6 item"><h2>Pocket borealis</h2></div>
+      <div class="item7 item"><h2>The curiosity</h2></div>
+      <div class="item8 item"><h2>Make it fisheye</h2></div>
+    </div>
+
+    <footer>
+      <div class="left">
+        <img src="./images/logo.svg" alt="logo" />
+        <div class="bottomNav">
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Events</a>
+          <a href="#">Products</a>
+          <a href="#">Support</a>
+        </div>
+        <p>
+          Coded by
+          <a href="https://www.linkedin.com/in/aditi-patni-59438721b/"
+            >Aditi Patni</a
+          >
+        </p>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/aditipatni3">
+          <img src="./images/icon-facebook.svg" alt="github"
+        /></a>
+        <a href="https://twitter.com/aaadddiiiii__">
+          <img src="./images/icon-twitter.svg" alt="twitter"
+        /></a>
+        <a href="https://www.linkedin.com/in/aditi-patni-59438721b/">
+          <img src="./images/icon-pinterest.svg" alt="linkedin"
+        /></a>
+        <a href="https://www.linkedin.com/in/aditi-patni-59438721b/">
+          <img src="./images/icon-instagram.svg" alt="instagram"
+        /></a>
+        <p>© 2021 Loopstudios. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
